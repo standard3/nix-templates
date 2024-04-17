@@ -16,12 +16,19 @@
 
 With Nix Flake :
 ```shell
-$ nix flake init github:standard3/nix-templates#<template>
+$ nix flake init -t github:standard3/nix-templates#<template>
 $ nix develop
 ```
 
 With direnv :
 ```shell
-$ nix flake init github:standard3/nix-templates#<template>
+$ nix flake init -t github:standard3/nix-templates#<template>
 $ direnv allow
 ```
+
+Available templates :
+- `base`
+- `c`
+- `python`
+- `python-poetry`
+- `rust`
