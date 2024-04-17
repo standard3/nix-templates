@@ -37,12 +37,14 @@
                 inherit inputs pkgs;
                 modules = [
                   {
-                    languages.python.enable = true;
-                    languages.python.poetry = {
+                    languages.python = {
                       enable = true;
-                      activate.enable = true;
-                      install.enable = true;
-                      install.quiet = true;
+                      poetry = {
+                        enable = true;
+                        activate.enable = true;
+                        install.enable = true;
+                        install.quiet = true;
+                      };
                     };
 
                     # https://devenv.sh/reference/options/
